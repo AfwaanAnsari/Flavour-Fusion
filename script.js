@@ -63,7 +63,7 @@ const addDataToHTML = () => {
                             </p>
                             <a class='food-button'>
                             <span class='top-border'></span>
-                            <span class='price-span'>$${product.price}</span>
+                            <span class='price-span'>₹${product.price}</span>
                             <span class='bottom-border'></span>
                             </a>
                         </div>`;
@@ -157,7 +157,7 @@ const addOrderToHTML = () => {
             let itemTotalPrice = data.price * orderItem.quantity;
             totalPrice += itemTotalPrice;
             newOrder.innerHTML = `<div class="name">${data.name}</div>
-                        <div class="price">$${itemTotalPrice.toFixed(2)}</div>
+                        <div class="price">₹${itemTotalPrice.toFixed(2)}</div>
                         <div class="quantity">
                             <span class="minus">-</span>
                             <span class="value">${orderItem.quantity}</span>
@@ -170,7 +170,7 @@ const addOrderToHTML = () => {
     itemCount.innerHTML = totalQuantity;
 
     if (totalPrice > 0) {
-        orderTotal.innerHTML = `Order total: $${totalPrice.toFixed(2)}`;
+        orderTotal.innerHTML = `Order total: ₹${totalPrice.toFixed(2)}`;
         placeOrder.disabled = false;
     } else {
         orderTotal.innerHTML = "";
