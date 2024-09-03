@@ -4,56 +4,56 @@
             "id": 1,
             "name": "Tandoori Chicken",
             "description": "Topped with marinated tandoori chicken, red onions, bell peppers, and mozzarella cheese.",
-            "price": 12.99,
+            "price": 429,
             "image": "images/pizzas/p1.jpg"
         },
         {
             "id": 2,
             "name": "Pepperoni",
             "description": "Classic pizza with spicy pepperoni slices and melted mozzarella cheese.",
-            "price": 10.99,
+            "price": 369,
             "image": "images/pizzas/p2.jpg"
         },
         {
             "id": 3,
             "name": "BBQ Chicken",
             "description": "Smoky BBQ sauce, grilled chicken, red onions, and cilantro with mozzarella and cheddar.",
-            "price": 11.99,
+            "price": 399,
             "image": "images/pizzas/p3.jpg"
         },
         {
             "id": 4,
             "name": "Veggie Supreme",
             "description": "Loaded with bell peppers, onions, mushrooms, olives, and tomatoes, topped with mozzarella.",
-            "price": 9.99,
+            "price": 329,
             "image": "images/pizzas/p4.jpg"
         },
         {
             "id": 5,
             "name": "Hawaiian",
             "description": "Sweet and savory with chicken, pineapple chunks, and mozzarella cheese.",
-            "price": 10.49,
+            "price": 349,
             "image": "images/pizzas/p5.jpg"
         },
         {
             "id": 6,
             "name": "Meat Lovers'",
             "description": "Piled high with pepperoni, sausage, and ground beef, covered with mozzarella.",
-            "price": 13.49,
+            "price": 449,
             "image": "images/pizzas/p6.jpg"
         },
         {
             "id": 7,
             "name": "Four Cheese",
             "description": "A blend of mozzarella, parmesan, gorgonzola, and fontina cheeses.",
-            "price": 11.49,
+            "price": 399,
             "image": "images/pizzas/p7.jpg"
         },
         {
             "id": 8,
             "name": "Chicken Tikka",
             "description": "Marinated chicken tikka, red onions, bell peppers, and mozzarella cheese.",
-            "price": 12.49,
+            "price": 499,
             "image": "images/pizzas/p8.jpg"
         }
     ],
@@ -62,56 +62,56 @@
             "id": 9,
             "name": "Classic Beef",
             "description": "Juicy beef patty with lettuce, tomato, pickles, and cheddar cheese.",
-            "price": 8.99,
+            "price": 359,
             "image": "images/burgers/b1.jpg"
         },
         {
             "id": 10,
             "name": "Zinger Blast",
             "description": "Crispy zinger chicken patty with spicy mayo, lettuce, and tomato.",
-            "price": 9.49,
+            "price": 379,
             "image": "images/burgers/b2.jpg"
         },
         {
             "id": 11,
             "name": "Spicy Jalapeno",
             "description": "Beef patty with jalapenos, pepper jack cheese, and spicy mayo.",
-            "price": 9.99,
+            "price": 399,
             "image": "images/burgers/b3.jpg"
         },
         {
             "id": 12,
             "name": "Mushroom Swiss",
             "description": "Beef patty with sautéed mushrooms and Swiss cheese.",
-            "price": 9.79,
+            "price": 389,
             "image": "images/burgers/b4.jpg"
         },
         {
             "id": 13,
             "name": "Spicy Bean",
             "description": "Spicy bean patty with lettuce, tomato, and cheddar cheese.",
-            "price": 10.49,
+            "price": 419,
             "image": "images/burgers/b5.jpg"
         },
         {
             "id": 14,
             "name": "Blue Cheese",
             "description": "Beef patty with blue cheese crumbles, lettuce, and caramelized onions.",
-            "price": 10.99,
+            "price": 439,
             "image": "images/burgers/b6.jpg"
         },
         {
             "id": 15,
             "name": "Veggie Delight",
             "description": "Grilled veggie patty with lettuce, tomato, pickles, and cheddar cheese.",
-            "price": 8.49,
+            "price": 329,
             "image": "images/burgers/b7.jpg"
         },
         {
             "id": 16,
             "name": "Cheddar Melt",
             "description": "Grilled chicken breast with melted cheddar cheese, lettuce, and tomato.",
-            "price": 9.99,
+            "price": 399,
             "image": "images/burgers/b8.jpg"
         }
     ],
@@ -120,56 +120,56 @@
             "id": 17,
             "name": "Mango Sorbet",
             "description": "Refreshing mango sorbet with a tropical twist.",
-            "price": 4.99,
+            "price": 199,
             "image": "images/ice creams/i8.jpg"
         },
         {
             "id": 18,
             "name": "Chocolate Fudge",
             "description": "Decadent chocolate ice cream with fudge swirls.",
-            "price": 5.49,
+            "price": 219,
             "image": "images/ice creams/i2.jpg"
         },
         {
             "id": 19,
             "name": "Strawberry Delight",
             "description": "Fresh strawberry ice cream with real strawberry chunks.",
-            "price": 5.29,
+            "price": 219,
             "image": "images/ice creams/i3.jpg"
         },
         {
             "id": 20,
             "name": "Paan Punch",
             "description": "Refreshing paan-flavored ice cream with a unique blend of spices.",
-            "price": 5.49,
+            "price": 219,
             "image": "images/ice creams/i4.jpg"
         },
         {
             "id": 21,
             "name": "Cookies & Cream",
             "description": "Vanilla ice cream with chunks of chocolate cookies.",
-            "price": 5.59,
+            "price": 229,
             "image": "images/ice creams/i5.jpg"
         },
         {
             "id": 22,
             "name": "Salted Caramel",
             "description": "Rich caramel ice cream with a hint of sea salt.",
-            "price": 5.69,
+            "price": 229,
             "image": "images/ice creams/i6.jpg"
         },
         {
             "id": 23,
             "name": "Pista Pop",
             "description": "Creamy pistachio ice cream with roasted pistachio pieces.",
-            "price": 5.79,
+            "price": 229,
             "image": "images/ice creams/i7.jpg"
         },
         {
             "id": 24,
             "name": "Creamy Vanilla",
             "description": "Creamy vanilla ice cream with a rich, smooth texture.",
-            "price": 4.99,
+            "price": 199,
             "image": "images/ice creams/i1.jpg"
         }
     ],
@@ -178,56 +178,56 @@
             "id": 25,
             "name": "Citrus Cooler",
             "description": "A zesty blend of citrus fruits with a hint of mint.",
-            "price": 3.99,
+            "price": 159,
             "image": "images/mocktails/m1.jpg"
         },
         {
             "id": 26,
             "name": "Berry Bliss",
             "description": "Mixed berries with a splash of lime and soda.",
-            "price": 4.49,
+            "price": 249,
             "image": "images/mocktails/m2.jpg"
         },
         {
             "id": 27,
             "name": "Tropical Paradise",
             "description": "Pineapple, coconut, and mango blend with a touch of mint.",
-            "price": 4.99,
+            "price": 199,
             "image": "images/mocktails/m3.jpg"
         },
         {
             "id": 28,
             "name": "Mint Lemonade",
             "description": "Refreshing lemonade with a hint of mint.",
-            "price": 3.79,
+            "price": 159,
             "image": "images/mocktails/m4.jpg"
         },
         {
             "id": 29,
             "name": "Peach Perfect",
             "description": "Iced refresher infused with juicy peach flavors.",
-            "price": 3.99,
+            "price": 159,
             "image": "images/mocktails/m5.jpg"
         },
         {
             "id": 30,
             "name": "Cucumber Cooler",
             "description": "Cucumber and lime blend with a splash of soda.",
-            "price": 4.29,
+            "price": 199,
             "image": "images/mocktails/m6.jpg"
         },
         {
             "id": 31,
             "name": "Watermelon Fizz",
             "description": "Fresh watermelon juice with a hint of lime and soda.",
-            "price": 4.49,
+            "price": 249,
             "image": "images/mocktails/m7.jpg"
         },
         {
             "id": 32,
             "name": "Ginger Lime",
             "description": "Zesty ginger and lime blend with a touch of honey.",
-            "price": 4.59,
+            "price": 259,
             "image": "images/mocktails/m8.jpg"
         }
     ]
