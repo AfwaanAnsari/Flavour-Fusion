@@ -1,0 +1,759 @@
+:root {
+    --c0: #eee9cf;
+    --c1: #f8f4e1;
+    --c2: #af8f6f;
+    --c3: #74512d;
+    --c4: #543310;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--c1);
+    grid-template-columns: 1fr;
+}
+
+body {
+    background-color: var(--c1);
+    display: grid;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--c2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--c3);
+}
+
+.smoother {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+/* .smoother nav li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.smoother nav ul {
+    padding-left: 0;
+} */
+
+.show-order .card-title {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-order .card .card-text {
+    height: 60px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: var(--c4);
+    color: var(--c1);
+    font-family: "Cinzel Decorative", serif;
+    font-style: normal;
+    height: 10vh;
+    width: 100%;
+    z-index: 4;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav h1 {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    margin: 0 40px;
+    text-align: left;
+}
+
+nav a {
+    color: var(--c1);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 1s ease, transform 1s ease;
+}
+
+nav a:hover {
+    color: var(--c2);
+    transform: scale(1.05);
+}
+
+.list-items {
+    align-items: center;
+}
+
+.food-icon {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.food-icon:hover {
+    color: var(--c2);
+}
+
+i {
+    font-size: 30px;
+}
+
+.food-icon span {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Carousel */
+
+.carousel {
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-item {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    font-family: "Cinzel Decorative";
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.carousel-item h1,
+.carousel-item h2 {
+    position: absolute;
+    left: 200px;
+    color: var(--c0);
+    z-index: 1;
+}
+
+.carousel-item h1 {
+    font-weight: 700;
+    top: 55%;
+    font-size: 50px;
+    transition: color 1s ease, transform 1s ease;
+}
+
+.carousel-item h1:hover {
+    transform: scale(1.03);
+    color: var(--c2);
+}
+
+.carousel-item h2 {
+    top: 45%;
+    font-size: 35px;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 0;
+}
+
+.food-title {
+    font-weight: 700;
+}
+
+.food-section {
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.food-section:nth-child(even) {
+    background-color: var(--c0);
+}
+
+.food-section:nth-child(even) .card {
+    background-color: var(--c1);
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.food-title {
+    font-size: 40px;
+    font-family: "Cinzel Decorative", serif;
+    color: var(--c4);
+    padding-bottom: 0;
+}
+
+.card {
+    background-color: var(--c0);
+    text-align: center;
+    border: 1px solid var(--c3);
+    transition: transform 0.75s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    height: 50%;
+}
+
+.card .card-text {
+    height: 40px;
+}
+
+.card-title {
+    font-family: "Cinzel";
+    font-weight: 700;
+    color: var(--c4);
+}
+
+.card-text {
+    color: var(--c3);
+    line-height: 1;
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.food-button {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    color: var(--c4);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    border-left: 4px solid var(--c3);
+    border-right: 4px solid var(--c3);
+}
+
+.top-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform: skew(-45deg);
+    background-color: var(--c3);
+}
+
+.food-button:hover .top-border {
+    background: linear-gradient(
+        to right,
+        var(--c3) 0%,
+        var(--c3) 61%,
+        transparent 61%,
+        transparent 69%,
+        var(--c3) 69%,
+        var(--c3) 100%
+    );
+    animation: upperborder 40s linear infinite forwards;
+}
+
+.bottom-border {
+    position: absolute;
+    bottom: 0.5px;
+    left: 0;
+    height: 3px;
+    background-color: var(--c3);
+    width: 100%;
+    transform: skew(-45deg);
+    padding-bottom: 2px;
+}
+
+.food-button:hover .bottom-border {
+    background: linear-gradient(
+        to right,
+        var(--c3) 0%,
+        var(--c3) 35%,
+        transparent 35%,
+        transparent 43%,
+        var(--c3) 43%,
+        var(--c3) 100%
+    );
+    animation: lowerborder 40s linear infinite forwards;
+}
+
+@keyframes upperborder {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -1000px;
+    }
+}
+
+@keyframes lowerborder {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}
+
+.food-button .price-span {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.food-button:hover .price-span {
+    opacity: 0;
+}
+
+.food-button::after {
+    content: "Add to Order";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.food-button:hover::after {
+    opacity: 1;
+}
+
+/* Order Tab */
+
+.order-tab {
+    margin-top: 10vh;
+    z-index: 3;
+    font-family: "Roboto";
+    width: 300px;
+    background-color: var(--c3);
+    color: var(--c1);
+    position: fixed;
+    inset: 0 -300px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 55px 55px;
+    transition: inset 0.5s ease;
+}
+
+.order-tab h1 {
+    text-align: center;
+    font-family: "Cinzel Decorative";
+    padding: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    width: 100%;
+    background-color: var(--c1);
+    color: var(--c4);
+    z-index: 2;
+}
+
+body.show-order .order-tab {
+    inset: 0 0 0 auto;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.order-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+.order-list .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.order-list .name {
+    flex: 1;
+    text-align: left;
+}
+
+.order-list .price {
+    margin-right: 10px;
+}
+
+.order-list .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: var(--c2);
+}
+
+.quantity span {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: var(--c4);
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.quantity span:hover {
+    background-color: var(--c2);
+}
+
+.quantity .value {
+    background-color: transparent;
+    color: var(--c1);
+    font-weight: 400;
+    cursor: default;
+}
+
+.quantity .value:hover {
+    background-color: transparent;
+}
+
+.order-total {
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+}
+.order-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.order-buttons button {
+    font-family: "Cinzel Decorative";
+    font-weight: 900;
+    border: none;
+}
+
+.dismiss {
+    background-color: var(--c2);
+    color: var(--c0);
+}
+
+.place-order {
+    background-color: var(--c1);
+    color: var(--c4);
+}
+
+footer {
+    background-color: var(--c4);
+    color: var(--c1);
+    font-family: "Cinzel Decorative", serif;
+    font-style: normal;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .carousel {
+        display: none;
+    }
+    #pizzas {
+        margin-top: 10vh;
+    }
+    .food-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.custom-hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 15px auto 15px;
+}
+
+.custom-hr .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--c3);
+    margin: 0 10px;
+}
+
+.custom-hr i {
+    font-size: 1.5em;
+    color: var(--c3);
+}
+
+/* Checkout */
+
+.checkout-body {
+    font-family: "Cinzel Decorative";
+    height: 100vh;
+}
+
+.payment-header {
+    padding: 3% 15%;
+    text-align: center;
+}
+
+.dark {
+    background-color: var(--c4);
+    color: var(c1);
+}
+
+.big-heading {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--c1);
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.small-heading {
+    color: var(--c3);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.pad {
+    padding: 35px;
+    margin: 0 auto;
+}
+
+button.dark {
+    font-family: "Cinzel Decorative";
+    font-size: 1.5em;
+    background-color: var(--c4);
+    color: var(--c1);
+    border-radius: 4px;
+    margin: 10px 10px;
+    height: 100px;
+    width: 250px;
+    border: solid var(--c4);
+    box-shadow: none;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+
+button.dark:hover {
+    background-color: var(--c1);
+    color: var(--c4);
+    border: 2px solid var(--c4);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+/* Payment */
+
+.payment-body {
+    font-family: "Cinzel Decorative";
+    overflow-x: hidden;
+    .payment-header {
+        padding: 3% 15%;
+        text-align: center;
+    }
+
+    .label {
+        color: var(--c4);
+        position: relative;
+        bottom: 65px;
+        left: 25px;
+        font-weight: bold;
+    }
+
+    .dark {
+        background-color: var(--c4);
+        color: var(--c1);
+    }
+
+    .payment-box {
+        font-family: "Cinzel Decorative";
+
+        margin: 50px 50px;
+        border: 4px solid;
+        border-color: var(--c4);
+        border-radius: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .fit-image {
+        width: 100%;
+        object-fit: cover;
+    }
+    .companies {
+        border-radius: 5px;
+        display: inline-block;
+        border-radius: 6px;
+        box-sizing: border-box;
+        border: 3px solid var(--c2);
+        cursor: pointer;
+        margin: 12px 25px 12px 0px;
+    }
+
+    .form-card {
+        background-color: var(--c0);
+    }
+
+    .form-card input:focus {
+        -moz-box-shadow: 0px 0px 0px 1.5px var(--c2) !important;
+        -webkit-box-shadow: 0px 0px 0px 1.5px var(--c2) !important;
+        box-shadow: 0px 0px 0px 1.5px var(--c2) !important;
+        font-weight: 600;
+        border: 1.5px solid var(--c2);
+        outline-width: 0;
+    }
+
+    .form-card input::placeholder {
+        color: var(--c2);
+        font-weight: normal;
+    }
+
+    .text-danger {
+        font-family: "Roboto";
+        color: var(--c2) !important;
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .col-12 {
+        margin-bottom: 15px;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 2px;
+        margin: 0;
+        height: 80px;
+        text-align: left;
+    }
+
+    .input-box .form-control {
+        background-color: var(--c1);
+        border: 1.5px solid var(--c2);
+        font-weight: bold;
+        color: var(--c3);
+        position: relative;
+        height: 80px;
+        border-radius: 6px;
+        padding-top: 30px;
+        padding-left: 25px;
+        width: 100%;
+    }
+
+    .pay {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pay-button {
+        font-size: 1.5em;
+        background-color: var(--c4);
+        height: 60px;
+        width: 100px;
+        color: var(--c1);
+        font-weight: normal;
+        transition: all 0.5s linear;
+        margin-bottom: 0.75rem;
+        border: 2px solid var(--c4);
+    }
+
+    .pay-button:hover {
+        background-color: var(--c1);
+        color: var(--c4);
+        border: 2px solid var(--c4);
+        font-weight: bold;
+    }
+}

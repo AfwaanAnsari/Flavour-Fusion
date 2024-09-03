@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flavour Fusion</title>
+        <link rel="icon" href="images/Logo.ico" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/3ab6fe4f4d.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body class="">
+        <div class="wrapper">
+            <nav>
+                <a class="brand" href="#">
+                    <img class="logo" src="images/Logo.png" alt="" />
+                    <h1>FlAVouR&nbsp; FUSioN</h1>
+                </a>
+                <div class="list-items">
+                    <ul>
+                        <li><a href="#pizzas">Pizzas</a></li>
+                        <li><a href="#burgers">Burgers</a></li>
+                        <li><a href="#ice-creams">Ice Creams</a></li>
+                        <li><a href="#mocktails">Mocktails</a></li>
+                    </ul>
+                </div>
+                <div class="food-icon">
+                    <span>0</span>
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+            </nav>
+            <div
+                id="food-carousel"
+                class="carousel slide carousel-fade"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slide">
+                            <img src="images/pizza.jpg" alt="" />
+                            <h2>Explore a wide range of</h2>
+                            <a href="#pizzas"><h1>pIZzAs</h1></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide">
+                            <img src="images/burger.jpg" alt="" />
+                            <h2>Explore a wide range of</h2>
+                            <a href="#burgers"><h1>BUrgeRs</h1></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide">
+                            <img src="images/icecream.jpg" alt="" />
+                            <h2>Explore a wide range of</h2>
+                            <a href="#ice-creams"><h1>Ice CReAMs</h1></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide">
+                            <img src="images/mocktail.jpg" alt="" />
+                            <h2>Explore a wide range of</h2>
+                            <a href="mocktails"><h1>MoCKTAils</h1></a>
+                        </div>
+                    </div>
+                </div>
+                <a
+                    class="carousel-control-prev"
+                    href="#food-carousel"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#food-carousel"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <section class="food-section container-fluid" id="pizzas">
+                <h1 class="food-title">pIZzAs</h1>
+                <div class="custom-hr">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <span class="line"></span>
+                </div>
+                <div class="food-container pizza-container"></div>
+            </section>
+            <section class="food-section container-fluid" id="burgers">
+                <h1 class="food-title">BUrgeRs</h1>
+                <div class="custom-hr">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-burger"></i>
+                    <span class="line"></span>
+                </div>
+                <div class="food-container burger-container"></div>
+            </section>
+            <section class="food-section container-fluid" id="ice-creams">
+                <h1 class="food-title">Ice CReAMs</h1>
+                <div class="custom-hr">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <span class="line"></span>
+                </div>
+                <div class="food-container icecream-container"></div>
+            </section>
+            <section class="food-section container-fluid" id="mocktails">
+                <h1 class="food-title">MoCKTAils</h1>
+                <div class="custom-hr">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                    <span class="line"></span>
+                </div>
+                <div class="food-container mocktail-container"></div>
+            </section>
+            <div class="order-tab">
+                <h1>ORder SuMmarY</h1>
+                <div class="order-list"></div>
+                <div class="order-total"></div>
+                <div class="order-buttons">
+                    <button class="dismiss">Dismiss</button>
+                    <button class="place-order">Place Order</button>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; 2024 FlAVouR FUSioN. all rights reserved.</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
