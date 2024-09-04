@@ -1,4 +1,4 @@
-# 🍕🍔 Flavour Fusion 🍦🍹
+# 🍕🍔 Flavour Fusion🍦🍹
 
 **Flavour Fusion** is a vibrant and dynamic restaurant website designed to tantalize your taste buds. Whether you're craving delicious pizzas, juicy burgers, creamy ice creams, or refreshing mocktails, Flavour Fusion has got you covered! Explore our offerings and place your order directly from the site.
 
