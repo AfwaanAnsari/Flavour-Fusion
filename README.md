@@ -33,7 +33,3 @@ To run this project locally:
     ```bash
     open index.html
     ```
-
----
-
-Feel free to customize this README to better fit your project or to highlight any additional features!
